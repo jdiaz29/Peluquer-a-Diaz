@@ -1,0 +1,79 @@
+/*MEDIOS DE PAGO*/
+.mediosdepago {
+  font-size: x-large;
+  font-family: sans-serif;
+  font-weight: bolder;
+  text-align: center;
+
+  color: black;
+
+  background-image: linear-gradient(
+      45deg,
+      transparent 20%,
+      black 25%,
+      transparent 25%
+    ),
+    linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%),
+    linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+    radial-gradient(gray 2px, transparent 0);
+  background-size: 30px 30px, 30px 30px;
+}
+
+/*Menu Navegacion*/
+.button {
+  cursor: pointer;
+  padding: 20px;
+  margin-top: 0;
+  font-family: "Girassol", cursive;
+  font-size: x-large;
+  font-weight: bolder;
+  background-color: black;
+  color: white;
+ 
+}
+.button:hover {
+  background-color: white;
+}
+
+.nav {
+  grid-row: auto;
+  
+  top: 0;
+  justify-self: center;
+  font-size: larger;
+}
+.nav-hijo {
+  display: none;
+  width: 30%;
+  background-color: rgb(221, 208, 208);
+  font-weight: bolder;
+  margin: auto;
+  font-family: "Girassol", cursive;
+}
+.nav-hijo a {
+  color: black;
+  padding: 20px;
+  text-decoration: underline;
+  display: block;
+}
+.nav:hover .nav-hijo {
+  display: block;
+}
+/*final del menu de navegacion*/
+/*LISTA*/
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: "Girassol", cursive;
+  justify-content: center;
+  align-items: center;
+  line-height: 5em;
+  text-decoration: underline;
+  background-color: rgb(221, 208, 208);
+  border-radius: 5em;
+
+  
+}

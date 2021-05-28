@@ -1,0 +1,173 @@
+/*LISTA DE SERVICIOS Y PRECIOS*/
+
+*{
+  margin: 0;
+  padding: 0;
+}
+.body {
+  font-size: xx-large;
+  font-family: "Girassol", cursive;
+  
+background-image: linear-gradient(
+    45deg,
+    transparent 20%,
+    black 25%,
+    transparent 25%
+  ),
+  linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%),
+  linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+  radial-gradient(gray 2px, transparent 0);
+background-size: 20px 20px, 20px 20px;
+}
+
+.button {
+  cursor: pointer;
+  padding: 20px;
+  font-size:30px;
+  font-weight: bolder;
+ background-color: black;
+  color: white;
+  font-family: "Girassol", cursive;
+  display: flex;
+  justify-content:center;
+ 
+  
+  
+ 
+}
+.button:hover {
+  background-color: rgb(221, 208, 208);
+}
+
+.nav {
+width: 50%;
+position: static;
+font-size: larger;
+text-align: center;
+display: flex;
+
+}
+.nav-hijo {
+  display: none;
+  background-color: rgb(221, 208, 208);
+  font-weight: bolder;
+  flex-wrap: wrap;
+  
+}
+.nav-hijo a {
+  color: black;
+  padding: 20px;
+  display: flex;
+}
+.nav:hover .nav-hijo {
+  display: flex;
+}
+
+
+
+}
+
+.contenedor {
+  text-align: center;
+  font-size: 10mm;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: rgb(221, 208, 208);
+  line-height: 4rem;
+}
+
+.lista {
+  background-color: rgb(221, 208, 208);
+  line-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-size: xx-large;
+  
+}
+/*Transformaciones y transcisiones*/
+#corte{
+  
+  transform: skew(20deg,10deg);
+  
+  padding: 20px;
+}
+:hover#corte{
+  background-color: salmon;
+  transition: 2s;
+  transform: scale(1.0);
+  ;
+}
+
+#flequillo{
+  transform: skew(20deg,10deg);
+padding: 20px;
+animation-name: animacionflequillo;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+position: relative;
+animation-direction: alternate-reverse;
+}
+:hover#flequillo{
+  background-color: salmon;
+  transition:2s;
+}
+
+#barba{
+  transform: skew(20deg,10deg);
+  padding: 20px;
+  animation-name: animacionbarba;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+position: relative;
+animation-direction: alternate-reverse;
+  
+}
+:hover#barba{
+  background-color: salmon;
+  transition:2s;
+}
+/*MEDIA QUERIES ADAPTABLE A Iphone X
+Al achicar la pantalla el display inicio se vuelve flex para poder usar las opciones.
+font-size agranda para leer mejor.
+*/
+@media  (max-width: 376px) {
+
+  .nav-hijo{
+    display: flex;
+  }
+  
+  .lista {
+    font-size: 40px ;
+  }
+
+  
+}
+
+@keyframes animacionflequillo {
+
+  0% {
+    top: 0;
+    right: 0;
+  
+  }
+  100% {
+    top:50px;
+    right: 50px;
+  }
+}
+
+@keyframes animacionbarba {
+
+  0% {
+    top:0;
+    left: 00;
+  }
+  100%{
+    top:50 px;
+    left: 50px;
+  }
+}
+ 

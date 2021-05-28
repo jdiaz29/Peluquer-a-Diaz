@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*ESTILO GENERAL EN BODY*/
+body {
+  background-image: linear-gradient(
+      45deg,
+      transparent 20%,
+      black 25%,
+      transparent 25%
+    ),
+    linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%),
+    linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
+    radial-gradient(gray 2px, transparent 0);
+  background-size: 30px 30px, 30px 30px;
+  font-family: "Girassol", cursive;
+}
+
+/*LOGO*/
+.logo h1 {
+padding: 20px 0;
+text-align: center;
+font-size: 4em;
+text-transform: uppercase;
+background-color: black;
+color: white;
+border: 2px solid white;
+  
+}
+
+/*Menu Navegacion*/
+.button {
+  cursor: pointer;
+  padding: 20px;
+  margin-top: 0;
+  font-family: "Girassol", cursive;
+  font-size: x-large;
+  font-weight: bolder;
+  height: 100px;
+  width: 30%;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  align-items: center;
+  border-color: white;
+ 
+}
+
+.button:hover {
+  background-color: rgb(221, 208, 208);
+  transition: 1s;
+  animation-direction: alternate-reverse;
+}
+
+.nav {
+  grid-row: auto;
+  top: 0;
+  justify-self: center;
+  font-size: larger;
+}
+.nav-hijo {
+  display: none;
+  min-width: 200px;
+  background-color: rgb(221, 208, 208);
+  font-weight: bolder;
+  
+}
+.nav-hijo a {
+  color: black;
+  padding: 20px;
+  text-decoration: underline;
+ 
+}
+.nav:hover .nav-hijo {
+  display: flex;
+justify-content:flex-end;
+align-content: flex-end;
+}
+  
+
+/*final del menu de navegacion*/
+
+/*GRID*/
+
+.grid {
+display: grid;
+grid-template-columns:repeat(5,1fr);
+gap: 1rem;
+}
+
+/*ITEMS DEL GRID*/
+.h2 {
+
+background-color:black;
+color: white;
+padding: 25px 25px;
+border:2px solid white;
+display: flex;
+align-content: center;
+justify-content: center;
+
+}
+
+.content {
+  grid-column: 1/6;
+  text-align: center;
+  font-size: larger;
+  border: 1px solid black;
+  background-color: rgb(221, 208, 208);
+}
+.parrafo {
+  
+grid-column: 1/5;
+font-size: 20px;
+border:1px solid black;
+line-height: 5em;
+background-color: rgb(221, 208, 208);
+padding: 50px 25px;
+text-align:center;
+}
+.parrafo h3{
+  text-decoration-line: underline;
+  
+}
+
+  
+
+.tabla {
+  
+  background-color: rgb(221, 208, 208);
+  padding: 50px 25px;
+  height: 100vh;
+  
+}
+.img {
+
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 400px;
+height: 500px;
+padding: 25px 25px;
+margin-left: 30px;
+}
+.aside {
+  grid-column: 5/6;
+  background-color: rgb(221, 208, 208);
+  padding: 50px 25px;
+  border: 1px solid black;
+  font-weight: 400;
+  font-size: larger;
+  line-height: 2em;
+  display: flex;
+  justify-self: center;
+}
+
+
+  
+  
+.footer{
+  grid-column: 1/6;
+  border: 3px solid white;
+
+}
+
+.footer ul {
+  padding: 25px 25px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  line-height: 2em;
+  background-color: black;
+  list-style: none;
+  color: white;
+  border: 1px solid black;
+}

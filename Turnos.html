@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--HEAD CON LINKS-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Solicitud de turnos</title>
+    <link rel="stylesheet" href="CSS/Turnos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <!--FINALIZA HEAD-->
+  <body>
+    <!--HEADER-->
+      <header class="volver a">
+        
+        <a  href="Index.html">Volver</a>
+      </header>
+    <div class="texto">
+      <h2>Solicitud de turnos</h2>
+      <p>
+        Elige los servicios requeridos, <br />
+        puedes incluir cualquier comentario adicional para que lo tengamos en
+        cuenta.
+      </p>
+    </div>
+    <!--Formulario-->
+    <fieldset>
+      <form class="form">
+        <div>
+          <label for="Nombre y apellido">Nombre</label>
+          <input type="text" name="Nombre y Apellido" />
+          <label for="Nombre y Apellido">Apellido</label>
+          <input type="text" name="Nombre y Apellido" />
+          <label for="Telefono de contacto">Telefono de contacto</label>
+          <input type="text" name="Telefono de contacto" />
+        </div>
+        <div>
+
+          <input type="radio" id="nuevoCliente" name="turno" value="nuevoCliente" checked>
+      
+         <label for="nuevoCliente">Nuevo cliente</label>
+      
+      </div>
+      
+      
+      
+      <div>
+      
+       <input type="radio" id="cliente" name="turno" value="cliente">
+      
+       <label for="cliente">Soy Cliente</label>
+      
+      </div>
+       
+        <div>
+          Corte
+          <input type="checkbox" name="Servicio" value="Corte" />
+          Color
+          <input type="checkbox" name="Servicio" value="color" />
+          Tratamientos
+          <input type="checkbox" name="Servicio" value="Tratamientos" />
+        </div>
+        <div>
+          Selecciona tu estilista
+          <select name="Profesional">
+            <option value="Elige tu Estilista">"Elige tu Estilista"</option>
+            <option value="Marcos">Marcos</option>
+            <option value="Javier">Javier</option>
+            <option value="Karina">Karina</option>
+          </select>
+          <br>Comentarios</br>
+        </div>
+        <div>
+          <textarea
+            name="Consulta"
+            id="Consulta"
+            cols="30"
+            rows="25"
+          ></textarea>
+        </div>
+      
+        <input class="enviar" type="submit" value="Enviar" />
+        <input class="enviar" type="reset" value="NuevoFormulario" />
+      
+      </form>
+    </fieldset>
+  </body>
+</html>
