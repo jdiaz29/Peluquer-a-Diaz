@@ -1,0 +1,19 @@
+{
+  "name": "nueva-carpeta",
+  "version": "1.0.0",
+  "description": "sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jdiaz29/Peluquer-a-Diaz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jdiaz29/Peluquer-a-Diaz/issues"
+  },
+  "homepage": "https://github.com/jdiaz29/Peluquer-a-Diaz#readme"
+}

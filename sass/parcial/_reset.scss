@@ -1,0 +1,20 @@
+  /*variable*/
+  
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    background-color:#212529 ;
+  }
+  
+  
+ .wella {
+  display: flex;
+  justify-content: space-between;
+ 
+  flex-wrap: wrap;
+  align-items: center;
+  border: $border;
+}

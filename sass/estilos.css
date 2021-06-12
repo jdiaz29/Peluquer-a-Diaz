@@ -1,134 +1,169 @@
+/*variable*/
 * {
   margin: 0;
   padding: 0;
 }
 
-
 body {
   background-color: #212529;
 }
 
-/*LOGO*/
-
-.navbar {
-justify-content: center;
-font-size: xx-large;
-font-family: "Girassol", cursive;
-text-transform: uppercase;
-border-radius: .25rem ;
+.wella {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #7cc576;
 }
 
+/*LOGO*/
+.navbar {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: xx-large;
+  font-family: "Girassol", cursive;
+  text-transform: uppercase;
+  border-radius: .25rem;
+}
 
 .navbar-brand {
-padding: 0;
-
+  padding: 0;
 }
 
 /*Menu Navegacion*/
-.container_nav{
-display: flex;
+.container_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-
-  
-
-
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   background-color: #212529;
-  color: #fff;
+  color: #7cc576;
 }
 
 .nav-link {
-  color: #fff;
+  color: #7cc576;
 }
 
-
 /*final del menu de navegacion*/
-
-
-
 .h2 {
-  color: #fff;;
+  color: #fff;
   text-align: center;
   margin-top: 5px;
-  
 }
 
 /*contenido principal*/
-
-.carousel-item{
- height: 500px;
- width: 80%;
- max-height: 500px;
- object-position: center;
- margin-left: 10%;
+.carousel-item {
+  height: 500px;
+  width: 80%;
+  max-height: 500px;
+  -o-object-position: center;
+     object-position: center;
+  margin-left: 10%;
 }
-.img_carousel{
+
+.img_carousel {
   height: 100%;
   width: 100%;
-  object-position: center;
-  object-fit: contain;
-
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-
 
 .img_carousel2 {
-height: 100%;
-width: 100%;
-object-position: center;
-object-fit: contain;
-
+  height: 100%;
+  width: 100%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
-
 
 .img_carousel3 {
   height: 100%;
   width: 100%;
-  object-position: center;
-  object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 /*final contenido principal*/
-
 /*texto y tabla*/
 .parrafo__h3 {
   padding: 10px;
-  
-  color: white;
-  font-size: large;
+  margin-top: 55px;
+  color: #fff;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.parrafo {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 55px;
+  line-height: 2rem;
 }
 
 .table {
-  color: black;
-  background-color:#fff;
-  border-radius: .25rem ;
+  background-color: #7cc576;
+  border-radius: .25rem;
   font-size: medium;
- 
+  border: 1px solid #fff;
+}
+
+.table_thead {
+  color: black;
+}
+
+.tr_td {
+  color: black;
 }
 
 /*aside*/
 .container_card {
-
   border: 1px solid black;
- font-size: larger;
+  font-size: larger;
   line-height: 1em;
   margin-bottom: 15px;
   margin-top: 10px;
-  background-color:#fff;
-  color:rgb(53, 224, 53);
-  
-  flex-wrap: wrap;
-  
+  background-color: #fff;
+  color: #35e035;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card-title {
+  color: black;
+  font-weight: bold;
+}
+
+.dias {
+  color: black;
+}
+
+.card-text {
+  color: black;
 }
 
 /*footer*/
-
 /*commens*/
 #footer {
   background: url("../img/footer-bg.jpg") center center no-repeat;
   color: #fff;
   font-size: 14px;
-  position: relative;}
+  position: relative;
+}
 
 #footer::before {
   content: "";
@@ -139,7 +174,7 @@ object-fit: contain;
   bottom: 0;
   background: rgba(0, 0, 0, 0.85);
   z-index: 1;
-  color:#fff;
+  color: #fff;
 }
 
 #footer .footer-top {
@@ -181,7 +216,8 @@ object-fit: contain;
   padding: 6px 10px;
   position: relative;
   border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
 
@@ -202,11 +238,12 @@ object-fit: contain;
   padding: 0 20px;
   background: #7cc576;
   color: #fff;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   border-radius: 50px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
-
 
 #footer .footer-bottom {
   border-top: 1px solid #222222;
@@ -225,3 +262,4 @@ object-fit: contain;
   font-size: 13px;
   padding-top: 5px;
 }
+/*# sourceMappingURL=estilos.css.map */

@@ -6,78 +6,46 @@
 }
 .body {
   font-size: xx-large;
+
+}
+
+.navbar {
+  justify-content:flex-start;
+  font-size: xx-large;
   font-family: "Girassol", cursive;
+  text-transform: uppercase;
+  border-radius: .25rem ;
+}
+
+.navbar_h1{
+  margin-left: 5px;
+}
+.container_nav {
+  display:flex;
+}
   
-background-image: linear-gradient(
-    45deg,
-    transparent 20%,
-    black 25%,
-    transparent 25%
-  ),
-  linear-gradient(-45deg, transparent 20%, black 25%, transparent 25%),
-  linear-gradient(-45deg, transparent 75%, black 80%, transparent 0),
-  radial-gradient(gray 2px, transparent 0);
-background-size: 20px 20px, 20px 20px;
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #212529;
+    color:#7cc576;
+    
 }
-
-.button {
-  cursor: pointer;
-  padding: 20px;
-  font-size:30px;
-  font-weight: bolder;
- background-color: black;
-  color: white;
-  font-family: "Girassol", cursive;
-  display: flex;
-  justify-content:center;
- 
   
-  
- 
-}
-.button:hover {
-  background-color: rgb(221, 208, 208);
-}
-
-.nav {
-width: 50%;
-position: static;
-font-size: larger;
-text-align: center;
-display: flex;
-
-}
-.nav-hijo {
-  display: none;
-  background-color: rgb(221, 208, 208);
-  font-weight: bolder;
-  flex-wrap: wrap;
-  
-}
-.nav-hijo a {
-  color: black;
-  padding: 20px;
-  display: flex;
-}
-.nav:hover .nav-hijo {
-  display: flex;
-}
-
-
-
-}
-
+.nav-link {
+    color:#7cc576;
+    font-size:medium;
+    font-family: sans-serif;
+  } 
 .contenedor {
   text-align: center;
   font-size: 10mm;
   border: 1px solid black;
   padding: 20px;
-  background-color: rgb(221, 208, 208);
+  background-color: #212529;
   line-height: 4rem;
 }
 
 .lista {
-  background-color: rgb(221, 208, 208);
+  background-color: #212529;
   line-height: 5rem;
   display: flex;
   flex-direction: column;
@@ -85,24 +53,30 @@ display: flex;
   align-items: center;
   list-style: none;
   font-size: xx-large;
+  color:#fff;
   
+}
+.perfect {
+  color:rgb(192, 20, 49);
+}
+.touch {
+  color:rgb(131, 7, 131);
 }
 /*Transformaciones y transcisiones*/
 #corte{
   
-  transform: skew(20deg,10deg);
   
   padding: 20px;
 }
 :hover#corte{
-  background-color: salmon;
+  background-color: #7cc576;
   transition: 2s;
   transform: scale(1.0);
+  border-radius: 0.6rem;
   ;
 }
 
 #flequillo{
-  transform: skew(20deg,10deg);
 padding: 20px;
 animation-name: animacionflequillo;
 animation-duration: 2s;
@@ -111,14 +85,15 @@ position: relative;
 animation-direction: alternate-reverse;
 }
 :hover#flequillo{
-  background-color: salmon;
+  background-color: #7cc576;
   transition:2s;
+  border-radius: 0.6rem;
 }
 
 #barba{
-  transform: skew(20deg,10deg);
-  padding: 20px;
-  animation-name: animacionbarba;
+
+padding: 20px;
+animation-name: animacionbarba;
 animation-duration: 2s;
 animation-iteration-count: infinite;
 position: relative;
@@ -126,9 +101,39 @@ animation-direction: alternate-reverse;
   
 }
 :hover#barba{
-  background-color: salmon;
+  background-color: #7cc576;
   transition:2s;
+  border-radius: 0.6rem;
 }
+
+#recorte_barba{
+padding: 20px;
+
+animation-duration: 2s;
+animation-iteration-count: infinite;
+position: relative;
+animation-direction: alternate-reverse;
+}
+:hover#recorte_barba{
+  background-color: #7cc576;
+  transition:2s;
+  border-radius: 0.6rem;
+}
+
+#afeitado{
+padding: 20px;
+
+animation-duration: 2s;
+animation-iteration-count: infinite;
+position: relative;
+animation-direction: alternate-reverse;
+}
+:hover#afeitado{
+  background-color: #7cc576;
+  transition:2s;
+  border-radius: 0.6rem;
+}
+
 /*MEDIA QUERIES ADAPTABLE A Iphone X
 Al achicar la pantalla el display inicio se vuelve flex para poder usar las opciones.
 font-size agranda para leer mejor.
@@ -148,26 +153,12 @@ font-size agranda para leer mejor.
 
 @keyframes animacionflequillo {
 
-  0% {
-    top: 0;
-    right: 0;
-  
+
   }
-  100% {
-    top:50px;
-    right: 50px;
-  }
-}
+
 
 @keyframes animacionbarba {
 
-  0% {
-    top:0;
-    left: 00;
-  }
-  100%{
-    top:50 px;
-    left: 50px;
-  }
+
 }
  
