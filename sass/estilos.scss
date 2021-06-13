@@ -1,5 +1,6 @@
 @import "parcial/variables";
-@import "parcial/_reset.scss";    
+@import "parcial/logic";
+@import "parcial/reset";    
 
 
 
@@ -33,10 +34,8 @@
   }
   
   .nav-link {
-    color:$color;
-    
-    
-  }
+    color: $blanco;
+    }
   
   
   /*final del menu de navegacion*/
@@ -89,12 +88,16 @@
   /*final contenido principal*/
   
   /*texto y tabla*/
+  /*prueba de Mixin*/
   .parrafo__h3 {
+    
     padding: 10px;
     margin-top: 55px;
     color: #fff;
     font-size: xx-large;
     text-align: center;
+    @include prueba;
+   
   }
     .parrafo {
     color: #fff;
@@ -182,11 +185,11 @@
   #footer .footer-top .footer-logo img {
     height: 80px;
   }
-  
+  /*USO DE EXTEND*/
   #footer .footer-top h3 {
     font-size: 36px;
     font-weight: 700;
-    color: #fff;
+    @extend .red;
     position: relative;
     font-family: "Poppins", sans-serif;
     padding: 30px 0 0 0;

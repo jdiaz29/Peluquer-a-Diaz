@@ -1,3 +1,13 @@
+.nav-link {
+  font-size: xx-large;
+  font-size: small;
+}
+
+/*EXTEND*/
+.red, #footer .footer-top h3 {
+  color: yellow;
+}
+
 /*variable*/
 * {
   margin: 0;
@@ -51,7 +61,7 @@ body {
 }
 
 .nav-link {
-  color: #7cc576;
+  color: #fff;
 }
 
 /*final del menu de navegacion*/
@@ -188,10 +198,10 @@ body {
   height: 80px;
 }
 
+/*USO DE EXTEND*/
 #footer .footer-top h3 {
   font-size: 36px;
   font-weight: 700;
-  color: #fff;
   position: relative;
   font-family: "Poppins", sans-serif;
   padding: 30px 0 0 0;
