@@ -8,22 +8,30 @@
   font-size: xx-large;
 
 }
-
+/*Logo */
 .navbar {
-  justify-content:flex-start;
+  
   font-size: xx-large;
   font-family: "Girassol", cursive;
   text-transform: uppercase;
   border-radius: .25rem ;
+  color:rgba(0,0,0,.9);
+  text-align: center;
 }
+
 
 .navbar_h1{
   margin-left: 5px;
 }
+
+/*Finaliza Logo*/
 .container_nav {
   display:flex;
 }
-  
+
+.nav{
+  align-items: center;}
+
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     background-color: #212529;
     color:#7cc576;
