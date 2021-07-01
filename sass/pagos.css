@@ -1,0 +1,131 @@
+.nav-link {
+  font-size: x-large;
+}
+
+/*EXTEND*/
+.red {
+  color: #7cc576;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #212529;
+}
+
+.wella {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #7cc576;
+}
+
+/*MEDIOS DE PAGO*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #212529;
+}
+
+/*Logo*/
+.navbar {
+  font-size: xx-large;
+  font-family: "Girassol", cursive;
+  text-transform: uppercase;
+  border-radius: .25rem;
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+.navbar_h1 {
+  margin-left: 5px;
+}
+
+/*Menu Navegacion*/
+.container_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+}
+
+.nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #212529;
+  color: #7cc576;
+  font-size: medium;
+}
+
+.nav-link {
+  color: #7cc576;
+  font-size: large;
+  background-color: #22262a;
+  font-family: sans-serif;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/*final del menu de navegacion*/
+/*LISTA*/
+.list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 5em;
+  text-decoration: underline;
+  background-color: #212529;
+  border-radius: 5em;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  font-size: xx-large;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/*Transformaciones y transcisiones*/
+.ul_li {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+:hover.ul_li {
+  background-color: #7cc576;
+  -webkit-transition: 2s;
+  transition: 2s;
+  border-radius: 0.6rem;
+}
+/*# sourceMappingURL=pagos.css.map */

@@ -1,0 +1,225 @@
+.nav-link {
+  font-size: x-large;
+}
+
+/*EXTEND*/
+.red {
+  color: #7cc576;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #212529;
+}
+
+.wella {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #7cc576;
+}
+
+/*LISTA DE SERVICIOS Y PRECIOS*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  font-size: xx-large;
+}
+
+/*Logo */
+.navbar {
+  font-size: xx-large;
+  font-family: "Girassol", cursive;
+  text-transform: uppercase;
+  border-radius: .25rem;
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
+}
+
+.navbar_h1 {
+  margin-left: 5px;
+}
+
+/*Finaliza Logo*/
+.container_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+}
+
+.nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  background-color: #212529;
+  color: #7cc576;
+}
+
+.nav-link {
+  color: #7cc576;
+  font-size: medium;
+  font-family: sans-serif;
+}
+
+.contenedor {
+  text-align: center;
+  font-size: 10mm;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: #212529;
+  line-height: 4rem;
+}
+
+.lista {
+  background-color: #212529;
+  line-height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  font-size: xx-large;
+  color: #fff;
+}
+
+.perfect {
+  color: #c01431;
+}
+
+.touch {
+  color: #830783;
+}
+
+/*Transformaciones y transcisiones*/
+#corte {
+  padding: 20px;
+}
+
+:hover#corte {
+  background-color: #7cc576;
+  -webkit-transition: 2s;
+  transition: 2s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border-radius: 0.6rem;
+}
+
+#flequillo {
+  padding: 20px;
+  -webkit-animation-name: animacionflequillo;
+          animation-name: animacionflequillo;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: relative;
+  animation-direction: alternate-reverse;
+}
+
+:hover#flequillo {
+  background-color: #7cc576;
+  -webkit-transition: 2s;
+  transition: 2s;
+  border-radius: 0.6rem;
+}
+
+#barba {
+  padding: 20px;
+  -webkit-animation-name: animacionbarba;
+          animation-name: animacionbarba;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: relative;
+  animation-direction: alternate-reverse;
+}
+
+:hover#barba {
+  background-color: #7cc576;
+  -webkit-transition: 2s;
+  transition: 2s;
+  border-radius: 0.6rem;
+}
+
+#recorte_barba {
+  padding: 20px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: relative;
+  animation-direction: alternate-reverse;
+}
+
+:hover#recorte_barba {
+  background-color: #7cc576;
+  -webkit-transition: 2s;
+  transition: 2s;
+  border-radius: 0.6rem;
+}
+
+#afeitado {
+  padding: 20px;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  position: relative;
+  animation-direction: alternate-reverse;
+}
+
+:hover#afeitado {
+  background-color: #7cc576;
+  -webkit-transition: 2s;
+  transition: 2s;
+  border-radius: 0.6rem;
+}
+
+/*MEDIA QUERIES ADAPTABLE A Iphone X
+  Al achicar la pantalla el display inicio se vuelve flex para poder usar las opciones.
+  font-size agranda para leer mejor.
+  */
+@media (max-width: 376px) {
+  .nav-hijo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .lista {
+    font-size: 40px;
+  }
+}
+
+@-webkit-keyframes animacionflequillo {}
+
+@keyframes animacionflequillo {}@-webkit-keyframes animacionbarba {}@keyframes animacionbarba {}
+/*# sourceMappingURL=servicios.css.map */

@@ -2,40 +2,53 @@
 @import "parcial/logic";
 @import "parcial/reset";    
 
-
-
-  /*LOGO*/
   
+/*Logo */
   .navbar {
-  justify-content: center;
-  font-size: xx-large;
-  font-family: "Girassol", cursive;
-  text-transform: uppercase;
-  border-radius: .25rem ;
-  background-color: #fff;
-  }
-
- 
- .navbar-brand {
-  padding: 0;
-  
+    
+    font-size: xx-large;
+    font-family: "Girassol", cursive;
+    text-transform: uppercase;
+    border-radius: .25rem ;
+    color:rgba(0,0,0,.9);
+    text-align: center;
   }
   
-  /*Menu Navegacion*/
+  
+  .navbar_h1{
+    margin-left: 5px;
+  }
+  
+  /*Finaliza Logo*/
   .container_nav {
-  display:flex;
+    display:flex;
+    background-color: $blanco;
   }
   
+  .nav{
+    align-items: center;}
   
   .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    background-color: #212529;
-    color:$color;
-    
+      background-color: #212529;
+      color:$color;
+      
   }
-  
+    
   .nav-link {
-    color: $blanco;
-    }
+      color:$color;
+      font-size:medium;
+      font-family: sans-serif;
+    } 
+  .contenedor {
+    text-align: center;
+    font-size: 10mm;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: #212529;
+    line-height: 4rem;
+  }
+    
+
   
   
   /*final del menu de navegacion*/
@@ -49,6 +62,7 @@
    max-height: 500px;
    object-position: center;
    margin-left: 10%;
+   margin-top: 5%;
   
   }
   .img_carousel{
@@ -79,7 +93,7 @@
   
   /*final contenido principal*/
   
-  /*texto y tabla*/
+ 
   /*prueba de Mixin*/
   .parrafo__h3 {
     
@@ -88,7 +102,7 @@
     color: #fff;
     font-size: xx-large;
     text-align: center;
-    @include prueba;
+    
    
   }
     .parrafo {
@@ -97,25 +111,26 @@
     margin-bottom: 55px;
     line-height: 2rem;
   }
-  
+   /*texto y tabla*/
   .table {
    
     background-color:$color;
     border-radius: .25rem ;
-    font-size: medium;
     border:$border-2;
   }
  .table_thead {
-        color:black;
-    }
+        color: black;
+        
+  }
    
 
 .tr_td {
-    color:black;
-}
+    color: black;
+    font-size: large;
+  }
   
   
-  /*aside*/
+  /*tarjeta*/
   .container_card {
   
     border: 1px solid black;
@@ -123,7 +138,7 @@
     line-height: 1em;
     margin-bottom: 15px;
     margin-top: 10px;
-    background-color:#fff;
+    background-color:$blanco;
     color:rgb(53, 224, 53);
     flex-wrap: wrap;
     
@@ -151,32 +166,44 @@
   /*commens*/
   #footer {
     background: url("../img/footer-bg.jpg") center center no-repeat;
-    color: #fff;
+    color:$blanco;
     font-size: 14px;
     position: relative;}
+   
+    /*¿Donde estamos?*/
+    .ubicacion {
+      display: flex;
+      flex-direction: column;
+      margin-top: 15px;
+      align-items: center;
+     
+    }
+
+    #donde_estamos{
+      color: $color;
+      text-align: center;
+      font-size: x-large;
+      padding: 20px;
+
+    }
+    .direccion {
+      text-align: center;
+      color: $blanco;
+      font-size: medium;
+    }
+    .contendor_img--ubicacion {
+      display: flex;
+      align-items: center;
+      
+    }
+    .img_ubicacion{
+      width: 100%;
+      height: 100%;
+      
+    }
+    
+    
   
-  #footer::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.85);
-    z-index: 1;
-    color:#fff;
-  }
-  
-  #footer .footer-top {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    padding: 80px 0;
-  }
-  
-  #footer .footer-top .footer-logo img {
-    height: 80px;
-  }
   /*USO DE EXTEND*/
   #footer .footer-top h3 {
     font-size: 36px;
@@ -186,67 +213,12 @@
     font-family: "Poppins", sans-serif;
     padding: 30px 0 0 0;
     margin-bottom: 0;
-  }
-  
-  #footer .footer-top p {
-    font-size: 15;
-    font-style: italic;
-    margin: 30px 0 0 0;
-    padding: 0;
-  }
-  
-  #footer .footer-top .footer-newsletter {
-    text-align: center;
-    font-size: 15px;
-    margin-top: 30px;
-  }
-  
-  #footer .footer-top .footer-newsletter form {
-    background: #fff;
-    padding: 6px 10px;
-    position: relative;
-    border-radius: 50px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    text-align: left;
-  }
-  
-  #footer .footer-top .footer-newsletter form input[type="email"] {
-    border: 0;
-    padding: 4px 8px;
-    width: calc(100% - 100px);
-  }
-  
-  #footer .footer-top .footer-newsletter form input[type="submit"] {
-    position: absolute;
-    top: 0;
-    right: -1px;
-    bottom: 0;
-    border: 0;
-    background: none;
-    font-size: 16px;
-    padding: 0 20px;
-    background: $color;
-    color: #fff;
-    transition: 0.3s;
-    border-radius: 50px;
-    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  
-  #footer .footer-bottom {
-    border-top: 1px solid #222222;
-    z-index: 2;
-    position: relative;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  
-  #footer .copyright {
     text-align: center;
   }
+
   
-  #footer .credits {
-    text-align: center;
-    font-size: 13px;
-    padding-top: 5px;
-  }
+  
+  
+  
+
+  

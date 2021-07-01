@@ -1,23 +1,15 @@
-$blanco: #fff;
-
-
 .nav-link {
 
- @if $color == $color {
-     font-size:xx-large;
-     
- }
-
- @if $blanco == $blanco {
-     font-size:small;
-
-
- }
+@if $blanco == $blanco {
+    font-size:x-large;
 }
+
+  
+   }
 
 /*EXTEND*/
 .red {
-    color: yellow;
+    color: $color;
 }
 
 @mixin prueba ($background , $font-family) {

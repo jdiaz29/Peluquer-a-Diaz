@@ -1,14 +1,13 @@
+@charset "UTF-8";
 .nav-link {
-  font-size: xx-large;
-  font-size: small;
+  font-size: x-large;
 }
 
 /*EXTEND*/
 .red, #footer .footer-top h3 {
-  color: yellow;
+  color: #7cc576;
 }
 
-/*variable*/
 * {
   margin: 0;
   padding: 0;
@@ -33,26 +32,32 @@ body {
   border: 1px solid #7cc576;
 }
 
-/*LOGO*/
+/*Logo */
 .navbar {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-size: xx-large;
   font-family: "Girassol", cursive;
   text-transform: uppercase;
   border-radius: .25rem;
+  color: rgba(0, 0, 0, 0.9);
+  text-align: center;
 }
 
-.navbar-brand {
-  padding: 0;
+.navbar_h1 {
+  margin-left: 5px;
 }
 
-/*Menu Navegacion*/
+/*Finaliza Logo*/
 .container_nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #fff;
+}
+
+.nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -61,16 +66,21 @@ body {
 }
 
 .nav-link {
-  color: #fff;
+  color: #7cc576;
+  font-size: medium;
+  font-family: sans-serif;
+}
+
+.contenedor {
+  text-align: center;
+  font-size: 10mm;
+  border: 1px solid black;
+  padding: 20px;
+  background-color: #212529;
+  line-height: 4rem;
 }
 
 /*final del menu de navegacion*/
-.h2 {
-  color: #fff;
-  text-align: center;
-  margin-top: 5px;
-}
-
 /*contenido principal*/
 .carousel-item {
   height: 500px;
@@ -79,6 +89,7 @@ body {
   -o-object-position: center;
      object-position: center;
   margin-left: 10%;
+  margin-top: 5%;
 }
 
 .img_carousel {
@@ -109,7 +120,7 @@ body {
 }
 
 /*final contenido principal*/
-/*texto y tabla*/
+/*prueba de Mixin*/
 .parrafo__h3 {
   padding: 10px;
   margin-top: 55px;
@@ -125,10 +136,10 @@ body {
   line-height: 2rem;
 }
 
+/*texto y tabla*/
 .table {
   background-color: #7cc576;
   border-radius: .25rem;
-  font-size: medium;
   border: 1px solid #fff;
 }
 
@@ -138,9 +149,10 @@ body {
 
 .tr_td {
   color: black;
+  font-size: large;
 }
 
-/*aside*/
+/*tarjeta*/
 .container_card {
   border: 1px solid black;
   font-size: larger;
@@ -175,27 +187,46 @@ body {
   position: relative;
 }
 
-#footer::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.85);
-  z-index: 1;
-  color: #fff;
+/*¿Donde estamos?*/
+.ubicacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-#footer .footer-top {
-  position: relative;
-  z-index: 2;
+#donde_estamos {
+  color: #7cc576;
   text-align: center;
-  padding: 80px 0;
+  font-size: x-large;
+  padding: 20px;
 }
 
-#footer .footer-top .footer-logo img {
-  height: 80px;
+.direccion {
+  text-align: center;
+  color: #fff;
+  font-size: medium;
+}
+
+.contendor_img--ubicacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img_ubicacion {
+  width: 100%;
+  height: 100%;
 }
 
 /*USO DE EXTEND*/
@@ -206,70 +237,6 @@ body {
   font-family: "Poppins", sans-serif;
   padding: 30px 0 0 0;
   margin-bottom: 0;
-}
-
-#footer .footer-top p {
-  font-size: 15;
-  font-style: italic;
-  margin: 30px 0 0 0;
-  padding: 0;
-}
-
-#footer .footer-top .footer-newsletter {
   text-align: center;
-  font-size: 15px;
-  margin-top: 30px;
-}
-
-#footer .footer-top .footer-newsletter form {
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 50px;
-  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  text-align: left;
-}
-
-#footer .footer-top .footer-newsletter form input[type="email"] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-
-#footer .footer-top .footer-newsletter form input[type="submit"] {
-  position: absolute;
-  top: 0;
-  right: -1px;
-  bottom: 0;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px;
-  background: #7cc576;
-  color: #fff;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  border-radius: 50px;
-  -webkit-box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-#footer .footer-bottom {
-  border-top: 1px solid #222222;
-  z-index: 2;
-  position: relative;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
-#footer .copyright {
-  text-align: center;
-}
-
-#footer .credits {
-  text-align: center;
-  font-size: 13px;
-  padding-top: 5px;
 }
 /*# sourceMappingURL=estilos.css.map */

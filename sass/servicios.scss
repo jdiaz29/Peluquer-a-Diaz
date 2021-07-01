@@ -1,0 +1,177 @@
+@import "parcial/variables";
+@import "parcial/logic";
+@import "parcial/reset";   
+
+/*LISTA DE SERVICIOS Y PRECIOS*/
+
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .body {
+    font-size: xx-large;
+  
+  }
+  /*Logo */
+  .navbar {
+    
+    font-size: xx-large;
+    font-family: "Girassol", cursive;
+    text-transform: uppercase;
+    border-radius: .25rem ;
+    color:rgba(0,0,0,.9);
+    text-align: center;
+  }
+  
+  
+  .navbar_h1{
+    margin-left: 5px;
+  }
+  
+  /*Finaliza Logo*/
+  .container_nav {
+    display:flex;
+    background-color: $blanco;
+  }
+  
+  .nav{
+    align-items: center;}
+  
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+      background-color: #212529;
+      color:$color;
+      
+  }
+    
+  .nav-link {
+      color:$color;
+      font-size:medium;
+      font-family: sans-serif;
+    } 
+  .contenedor {
+    text-align: center;
+    font-size: 10mm;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: #212529;
+    line-height: 4rem;
+  }
+  
+  .lista {
+    background-color: #212529;
+    line-height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    font-size: xx-large;
+    color: $blanco;
+    
+  }
+  .perfect {
+    color:rgb(192, 20, 49);
+  }
+  .touch {
+    color:rgb(131, 7, 131);
+  }
+  /*Transformaciones y transcisiones*/
+  #corte{
+    
+    
+    padding: 20px;
+  }
+  :hover#corte{
+    background-color:$color;
+    transition: 2s;
+    transform: scale(1.0);
+    border-radius: 0.6rem;
+    ;
+  }
+  
+  #flequillo{
+  padding: 20px;
+  animation-name: animacionflequillo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  position: relative;
+  animation-direction: alternate-reverse;
+  }
+  :hover#flequillo{
+    background-color:$color;
+    transition:2s;
+    border-radius: 0.6rem;
+  }
+  
+  #barba{
+  
+  padding: 20px;
+  animation-name: animacionbarba;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  position: relative;
+  animation-direction: alternate-reverse;
+    
+  }
+  :hover#barba{
+    background-color: $color;
+    transition:2s;
+    border-radius: 0.6rem;
+  }
+  
+  #recorte_barba{
+  padding: 20px;
+  
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  position: relative;
+  animation-direction: alternate-reverse;
+  }
+  :hover#recorte_barba{
+    background-color:$color;
+    transition:2s;
+    border-radius: 0.6rem;
+  }
+  
+  #afeitado{
+  padding: 20px;
+  
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  position: relative;
+  animation-direction: alternate-reverse;
+  }
+  :hover#afeitado{
+    background-color:$color;
+    transition:2s;
+    border-radius: 0.6rem;
+  }
+  
+  /*MEDIA QUERIES ADAPTABLE A Iphone X
+  Al achicar la pantalla el display inicio se vuelve flex para poder usar las opciones.
+  font-size agranda para leer mejor.
+  */
+  @media  (max-width: 376px) {
+  
+    .nav-hijo{
+      display: flex;
+    }
+    
+    .lista {
+      font-size: 40px ;
+    }
+  
+    
+  }
+  
+  @keyframes animacionflequillo {
+  
+  
+    }
+  
+  
+  @keyframes animacionbarba {
+  
+  
+  }
+   
