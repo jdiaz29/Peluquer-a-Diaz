@@ -4,14 +4,8 @@
   }
 
   body {
-    background-color:#212529 ;
+    background: linear-gradient(0deg,rgba(68, 67, 67, 0.959),white);
+    
   }
   
   
- .wella {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  border: $border;
-}

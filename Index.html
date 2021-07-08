@@ -14,41 +14,37 @@
     <title>Javier Diaz Peluqueria</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Girassol&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/estilos.css">
-       
+    <script src="https://kit.fontawesome.com/1271f07039.js" crossorigin="anonymous"></script>
 </head>
 
     <!--FINALIZA HEAD-->
   
  <body>
 
-      <!--LOGO-->
-      <!--NAVEGACION-->
-
-<header>
+  <header>
    <div class="container_nav">
-      
+      <!--LOGO-->
       <a class="navbar-brand navbar" href="index.html">
-        <h1 class="navbar_h1">JavPeluquería</h1></a>
-        
-       <ul class="nav nav-pills ms-auto" id="pills-tab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <a style="text-decoration:none"href="servicios.html"><button class="nav-link active " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Servicios</button></a>
-           </li>
-          <li class="nav-item" role="presentation">
-            <a style="text-decoration:none"href="#donde_estamos"> <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">¿Dónde Estamos?</button></a>
-           </li>
-           <li class="nav-item" role="presentation">
-            <a style="text-decoration:none"href="turnos.html"><button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Turnos</button></a>
-           </li>
-           <li class="nav-item" role="presentation">
-            <a style="text-decoration:none"href="medios de pago.html"><button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Medios de Pago</button></a>
-          </li>
-        </ul>
-        
-      </div>
+        <h1 class="navbar_h1">JavPeluquería</h1><i class="fas fa-cut"></i></a>
+
+        <div class="respmenu ms-auto">
+          <input type="checkbox">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+          <nav>
+            <ul>
+             
+              <li><a href="servicios.html">Servicios</a></li>
+              <li><a href="turnos.html">Turnos</a></li>
+              <li><a href="medios de pago.html">Medios de pago</a></li>
+              <li><a href=#donde_estamos>Salón</a></li>
+            </ul>
+          </nav>
+        </div>
+          </div>
+       
 </header>
 
 <!--CONTENIDO PRINCIPAL-->
@@ -56,13 +52,13 @@
  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="imagenes proyecto/20181117_183805.jpg" class="d-block w-100 img_carousel" alt="rubio">
+      <img src="imagenes proyecto/rubio.jpg" class=" d-block w-100 img_carousel" alt="rubio">
     </div>
     <div class="carousel-item">
-      <img src="imagenes proyecto/20201002_020748.jpg" class="d-block w-100 img_carousel2" alt="mechas">
+      <img src="imagenes proyecto/rojo.jpg" class="d-block w-100 img_carousel2" alt="mechas">
     </div>
     <div class="carousel-item">
-      <img src="imagenes proyecto/IMG-20190504-WA0082.jpg" class="d-block w-100 img_carousel3" alt="barberia">
+      <img src="imagenes proyecto/corte.jpg" class="d-block w-100 img_carousel3" alt="barberia">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -86,7 +82,7 @@
 
 
   <!-- tabla informativa-->
-  <div>
+  <div class= "container">
   <table class="table">
   <thead class="table_thead">
    <tr class="tr_td">
@@ -99,7 +95,7 @@
   <tr class="tr_td">
     <td >Shock de Keratina</td>
     <td  >Aporta Brillo, reduce Frizz, da efecto lacio.</td>
-    <td >No restaura cabello.</td>
+    <td >Cabello sedoso y brillante sin frizz.</td>
   </tr>
 
   <tr class="tr_td">
@@ -108,15 +104,14 @@
      Repara puntas abiertas,fija el color y lo protege,restaura la fibra
      capilar de adentro hacia afuera.
     </td>
-    <td>Restaura cabello.</td>
+    <td>Restaura cabello, aporta brillo y suavidad.</td>
   </tr>
     <tr class="tr_td">
   <td>Alisados</td>
     <td>
-   Controla el frizz, elimina la onda del cabello, aporta brillo y
-   suavidad al cabello.
+   Controla el frizz, elimina la onda del cabello dejando lacio, aporta brillo.
     </td>
-    <td>No restaura cabello, su aplicacion debilita la fibra capilar.</td>
+    <td>Cabello lacio y manejable ,fácil de secar y peinar.</td>
    </tr>
    </table>
   </div>      
@@ -139,9 +134,9 @@
            </div>
         </div>
           <!--imagen de tarjeta-->
-          ------
+         
           
-          <div class="wella">
+          <div class=" container wella">
             
            <img class="primera_img" src="imagenes proyecto/loreal.jpg" alt="Loreal">
            <img class="segunda_img" src="imagenes proyecto/wella.jpg" alt="Wella">
@@ -162,13 +157,20 @@
      </div>
     <div class="footer-top">
 
-      <div class="container">
+      
 
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <h3>Seguinos en redes sociales</h3>
           </div>
-        </div>
+        
+         <div class="redes">
+          <a href="https://instagram.com/javpeluqueria?utm_medium=copy_link" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/Javier-D%C3%ADaz-Peluquer%C3%ADa-2082939525126277" class="facebook"><i class="fab fa-facebook-f"></i></i></a>
+          <a href="https://www.youtube.com/" class="youtube"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="up">Volver al inicio<i class="far fa-hand-point-up"></i></a>
+          </div>
+        
       
       </footer>
      <!-- End Footer -->
